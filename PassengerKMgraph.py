@@ -5,6 +5,15 @@ squares = [47.0, 37.0, 34.2, 34.0, 32.5, 33.5, 33.3, 33.5, 33.3, 32.7, 34.0, 36.
 
 fig, ax = plt.subplots()
 
+fig.suptitle("Passenger Kilometres Travelled in Great Britain", fontsize=16)
+
+ax.set_title("1946-2020", fontsize=14)
+
+ax.set_xlabel("Year", fontsize=12)
+
+ax.set_ylabel("Kilometres (Billions)", fontsize=12)
+
+
 ax.plot(input_values, squares)
 
 plt.show()
