@@ -13,6 +13,9 @@ ax.set_xlabel("Year", fontsize=12)
 
 ax.set_ylabel("Kilometres (Billions)", fontsize=12)
 
-ax.plot(year, kilometres)
+ax.plot(year, kilometres, 'ro-')
+
+ax.xaxis.grid()
+ax.yaxis.grid()
 
 plt.show()
