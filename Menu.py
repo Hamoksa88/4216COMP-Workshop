@@ -10,22 +10,22 @@ def Menu():
 
     if(user_input == '1'):
         #------Insert Graph Program Here-----
-        print("You have chosen Data Visualisation on a Graph")
+        print("You Have Chosen Data Visualisation on a Graph")
 
     elif(user_input == '2'):
         #------Insert Mean Program Here------
-        print("You have chosen Mean Values of Data")
+        print("You Have Chosen Mean Values of Data")
 
     elif(user_input == '3'):
         #------Insert Specific Year Program Here------
-        print("You have chosen Data for a specific year")
+        print("You Have Chosen Data for a specific year")
 
     elif(user_input == '4'):
         #------Insert Data Viewing Program Here------
-        print("You have chosen View the Data")
+        print("You Have Chosen to View the Data")
 
     else:
-        print('You have entered an incorrect value')
+        print('You Have Entered an Incorrect Value')
         Menu()
 
 Menu()
