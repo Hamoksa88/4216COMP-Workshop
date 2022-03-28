@@ -26,7 +26,7 @@ def Menu():
         print("You Have Chosen to View the Data")
 
     elif(user_input == '5'):
-        print('You have chosen...')
+        print('You have chosen....')
         #------Enter Your Program Here------
 
     else:
