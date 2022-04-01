@@ -42,7 +42,7 @@ for i in range(35,len(prData)): prQuarterly.append(prData[i])
 #Menu Dedicated to Passenger Kilometre Data
 def pkMenu():
     print("You Have Selected the Passenger Kilometre Options")
-    print("Please Select From the Following4")
+    print("Please Select From the Following")
     print("Data Visualisation on a Graph (1)")
     print("Mean Values of Data (2)")
     print("Highest and lowest values of data (3)")
