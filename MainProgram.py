@@ -77,6 +77,7 @@ def prMenu():
     Mean values of data (2)
     Lowest and highest values of data (3)
     View the Data (4)
+    Quarterley graph visualisation (5)
     ''')
     user_input = input("What would you like to access?")
     
@@ -94,7 +95,11 @@ def prMenu():
     elif user_input == '4':
         print("You have selected to view the data.")
         pr_ViewData()
-    
+
+    elif user_input == '5':
+        print("You have selected quarterley graph visualisation of data.")
+        pr_DataVisualisationQ()
+        
     else:
         print("You have entered an incorrect value.")
         prMenu()
@@ -149,6 +154,7 @@ def pk_DataVisualisation():
 
     plt.show()
 
+
 #Prints the Passenger Kilometre Data to the User
 def pk_ViewData():
     for r in pkData: print(r)
@@ -202,6 +208,31 @@ def pr_DataVisualisation():
 
     plt.show()
 
+
+#---Graph on total quarterley ordinary ticket revenue (£ million)
+def pr_DataVisualisationQ():
+    
+    figQ, axQ = plt.subplots()
+
+    figQ .suptitle("Passenger Kilometres Travelled in Great Britain (Quarterley)", fontsize=16)
+
+    axQ.set_title("Apr 1996 - Jul 2021", fontsize=14)
+
+    axQ.set_xlabel("Year", fontsize=4)
+
+    axQ.set_ylabel("(£ million)", fontsize=4)
+
+    yr, revenue = [], []
+    for y in prQuarterly:
+        yr.append(y[0])
+        revenue.append(y[5])
+        
+    axQ.plot(yr, revenue)
+
+    axQ.xaxis.grid()
+    axQ.yaxis.grid()
+
+    plt.show()
 
 #Main:
 print("Welcome")
