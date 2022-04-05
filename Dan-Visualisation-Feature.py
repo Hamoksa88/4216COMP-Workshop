@@ -19,8 +19,9 @@ ax1.set_xlabel("Year", fontsize=12)
 
 ax1.set_ylabel("(£ million)", fontsize=12)
 
-ax1.plot(year2, ticket)
-ax1.plot(year2, s_ticket)
+ax1.plot(year2, ticket, label="Regular Ticket Revenue")
+ax1.plot(year2, s_ticket, label="Seasonal Ticket Revenue")
+ax1.legend(loc="upper left")
 
 ax1.xaxis.grid()
 ax1.yaxis.grid()
@@ -39,7 +40,9 @@ ax.set_xlabel("Year", fontsize=12)
 
 ax.set_ylabel("Kilometres (Billions)", fontsize=12)
 
-ax.plot(year, kilometres, 'ro-')
+
+ax.plot(year, kilometres, 'ro-', label="Kilometres Travelled (Billions)")
+ax.legend(loc="upper left")
 
 ax.xaxis.grid()
 ax.yaxis.grid()
